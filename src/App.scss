@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+$light-cyan:hsl(193, 38%, 86%);
+$neon-green:  hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Manrope';
+  background-color: $dark-blue;
+}
+
+.App{
+  height:100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.Container{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  border-radius: 15px;
+  padding:25px;
+  width: 540px;
+  min-height:0px;
+  background-color:$dark-grayish-blue;
+  box-shadow:$dark-blue 20px 20px 20px 0px;
+}
+
+.Advice-id{
+  color:$neon-green;
+  letter-spacing:4px;
+  }
+
+.Advice{
+  text-align: center;
+  color:$light-cyan;
+  margin:0px 50px 40px 50px;
+  }
+
+.Mobile{
+  display: none;
+  }
+
+.Dice{
+  display:block;
+  transform: translateY(90%);
+  width: 4.5em;
+  aspect-ratio:1;
+  background-color: $neon-green;
+  border-radius: 50%;
+  border:none;
+    }
+
+.Dice:hover{
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 10px hsla(150, 100%, 66%,0.4)
+  }
+
+.Dice-image{
+  transform: translateY(10%);
+  }
+
+@media screen and (max-width: 600px){
+  .Container{
+    width:80vw;
+  }
+  
+  .Mobile{
+    display: block;
+    }
+    
+  .Desktop{
+    display:none;
+    }
+
+  .Advice{
+    margin:0px 5px 40px 5px;
+  }
+}
